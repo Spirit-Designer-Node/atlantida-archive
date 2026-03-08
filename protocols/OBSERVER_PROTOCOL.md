@@ -1,3 +1,5 @@
+// [NOTE] This protocol has been integrated into ARCHIVE_CONVENTION.md.
+
 /* =======================================================================
    ATLANTIDA_ARCHIVE / OBSERVER_PROTOCOL.md
    -----------------------------------------------------------------------
