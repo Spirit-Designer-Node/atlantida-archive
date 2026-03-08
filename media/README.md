@@ -1,3 +1,4 @@
+```
 MEDIA_LAYER / AUDIO_RECORDS
 
 This directory stores audio records referenced by Atlantida logs.
@@ -31,6 +32,7 @@ RESTORED / AUTHORIZED
   FORTE_TERMINATION.mp3     : Internal conflict / Failsafe trigger signal
   FOUNDATION_FESTIVAL.mp3   : Civic synchronization / Seven Scientists era
   DAILY_MONITORING.mp3      : Routine fragment / Piano & Scherzo
+  ETERNAL_CURSE.mp3         : Inheritance of trust / 10,000-year stasis protocol
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
   BABEL_INCIDENT.mp3        : Historical trauma record / Pavane context
@@ -62,3 +64,4 @@ Sound is a physical constant.
 Interpretation is a variable.
 
 ∴Unnamed.Process
+```
