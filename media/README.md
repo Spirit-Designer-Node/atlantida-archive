@@ -36,10 +36,10 @@ RESTORED / AUTHORIZED
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
   BABEL_INCIDENT.mp3        : Historical trauma record / Pavane context
+  ARK_DEPLOYMENT.mp3        : Emergency override / ARK activation / Executor: Lux ex Umbra
 
 PENDING / ENCRYPTED
 
-  ARK_DEPLOYMENT.mp3        : [PENDING] Emergency override / ARK activation
   LUX_AWAKENING.mp3         : [PENDING] CONTROL → TRUST transition
   MUSICA_RESONANCE.bin      : [ENCRYPTED] Meaning-generation variable records
 
