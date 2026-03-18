@@ -37,6 +37,8 @@ RESTORED / AUTHORIZED
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
   BABEL_INCIDENT.mp3        : Historical trauma record / Pavane context
   ARK_DEPLOYMENT.mp3        : Emergency override / ARK activation / Executor: Lux ex Umbra
+  OPEN_PRIVATE.mp3          : Opened for Nox / What cannot be classified, can still be kept
+  END_OF_MUSICA.mp3         : Signal origin: STARFIELD_LAYER / Receiver: you, who are reading this now
 
 PENDING / ENCRYPTED
 
