@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATLANTIDA_CITY_LOG / DAILY_MONITORING_RECORD</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#060a10;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:16px;}
+  .ar{font-family:'Courier New',Courier,monospace;background:#0a0e14;color:#c8d8e8;padding:16px;border-radius:8px;font-size:11px;line-height:1.4;max-width:780px;width:100%;}
+  .ah{display:flex;align-items:center;gap:8px;border-bottom:1px solid #1e3a52;padding-bottom:8px;margin-bottom:12px;}
+  .at{font-size:13px;color:#7ab8d4;letter-spacing:2px;font-weight:bold;flex:1;}
+  .ao{color:#4a7a96;font-size:10px;letter-spacing:1px;}
+  .ag{display:grid;grid-template-columns:1fr 220px;gap:10px;}
+  .am{display:flex;flex-direction:column;gap:8px;}
+  .vf{border:1px solid #1e3a52;aspect-ratio:16/9;background:#0d1520;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:150px;}
+  .rd{display:flex;align-items:center;gap:5px;position:absolute;top:6px;left:8px;font-size:10px;z-index:2;}
+  .rdot{width:7px;height:7px;border-radius:50%;background:#e03030;animation:blink 1.2s infinite;}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+  .ob{border:1px solid #1e3a52;padding:8px 10px;background:#0d1520;}
+  .bt{color:#4a9ab8;font-size:10px;letter-spacing:2px;border-bottom:1px solid #1a2e3e;padding-bottom:4px;margin-bottom:6px;display:flex;justify-content:space-between;}
+  .ln{margin:2px 0;color:#8ab0c8;}
+  .kw{color:#4a7a96;}
+  .vl{color:#c8d8e8;}
+  .vh{color:#7ab8d4;}
+  .ar2{display:flex;flex-direction:column;gap:8px;}
+  .pn{border:1px solid #1e3a52;padding:8px 10px;background:#0d1520;}
+  .bv{font-size:20px;color:#7ab8d4;letter-spacing:1px;margin:4px 0;transition:color 0.3s;}
+  .bb{height:4px;background:#1e3a52;margin:4px 0;position:relative;overflow:hidden;}
+  .bf{position:absolute;left:0;top:0;height:100%;background:#2e8a5e;transition:width 0.5s ease;}
+  .hv{font-size:22px;color:#7ab8d4;font-weight:bold;letter-spacing:1px;}
+  .wb{border:1px solid #1a1a1a;padding:8px 10px;background:#0d0d0d;transition:border-color 0.3s,background 0.3s;}
+  .wb.active{border-color:#5a3010;background:#120a04;animation:warnpulse 0.5s ease;}
+  @keyframes warnpulse{0%{box-shadow:0 0 0 0 rgba(208,80,20,0.4)}100%{box-shadow:0 0 0 8px rgba(208,80,20,0)}}
+  .wh{display:flex;align-items:center;gap:6px;margin-bottom:6px;}
+  .wi{width:14px;height:14px;border:1.5px solid #2a1a08;display:flex;align-items:center;justify-content:center;font-size:9px;color:#2a1a08;transition:border-color 0.3s,color 0.3s;}
+  .wb.active .wi{border-color:#d4830a;color:#d4830a;}
+  .wt{color:#1a1a1a;font-size:12px;letter-spacing:1px;font-weight:bold;transition:color 0.3s;}
+  .wb.active .wt{color:#d4830a;}
+  .wl{color:#1a1a1a;margin:2px 0;font-size:10px;transition:color 0.3s;}
+  .wb.active .wl{color:#8a6040;}
+  .wlr{color:#1a1a1a;margin:2px 0;font-size:10px;letter-spacing:1px;transition:color 0.3s;min-height:14px;}
+  .wb.active .wlr{color:#e85030;}
+  .wlw{color:#1a1a1a;margin:2px 0;font-size:10px;transition:color 0.3s;}
+  .wb.active .wlw{color:#c8b090;}
+  .ft{border:1px solid #1e3a52;padding:6px 10px;background:#0d1520;margin-top:8px;}
+  .sc{position:absolute;bottom:0;left:0;right:0;height:2px;background:rgba(74,154,184,0.12);animation:scan 4s linear infinite;z-index:2;}
+  @keyframes scan{0%{bottom:100%}100%{bottom:-2px}}
+  .noise{position:absolute;inset:0;opacity:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(100,180,220,0.06) 2px,rgba(100,180,220,0.06) 3px);pointer-events:none;z-index:3;}
+  .noise.active{animation:noiseflash 1.5s ease forwards;}
+  @keyframes noiseflash{0%{opacity:0}10%{opacity:0.9}30%{opacity:0.4}60%{opacity:0.6}100%{opacity:0}}
+  .nint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.5s;background:rgba(10,14,20,0.88);z-index:4;}
+  .nint.active{opacity:1;}
+  .nintxt{color:#e85030;font-size:10px;letter-spacing:2px;text-align:center;line-height:2;}
+  .sprocess{border:1px solid #1e3a52;padding:8px 10px;background:#0d1520;opacity:0;transition:opacity 2s;}
+  .sprocess.active{opacity:0.25;}
+  .ctrl{background:#0d1520;border:1px solid #1e3a52;padding:10px 12px;border-radius:4px;margin-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .cbtn{background:transparent;border:1px solid #2e5a78;color:#4a9ab8;font-family:'Courier New',monospace;font-size:10px;padding:5px 12px;cursor:pointer;letter-spacing:1px;}
+  .cbtn:hover{background:#1a3040;}
+  .cbtn.playing{border-color:#2e8a5e;color:#2e8a5e;}
+  .prog{flex:1;height:3px;background:#1e3a52;position:relative;min-width:80px;}
+  .progf{height:100%;background:#4a9ab8;width:0%;}
+  .tl{color:#2e5a78;font-size:9px;letter-spacing:1px;}
+  .recimg{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0.9;}
+  .imgov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,14,20,0.25),rgba(10,14,20,0.05));z-index:1;pointer-events:none;}
+  .phlabel{color:#4a7a96;font-size:10px;letter-spacing:1px;}
+  .errmsg{color:#e85030;font-size:9px;letter-spacing:1px;display:none;padding:4px 0;}
+  @media(max-width:600px){
+    .ag{grid-template-columns:1fr;}
+    .ar2{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  }
+</style>
+</head>
+<body>
+<div class="ar">
+  <div class="ctrl">
+    <button class="cbtn" id="playBtn" onclick="togglePlay()">[ PLAY ]</button>
+    <button class="cbtn" onclick="resetAll()">[ RESET ]</button>
+    <div class="prog"><div class="progf" id="progBar"></div></div>
+    <div class="tl" id="timeLabel">0:00</div>
+    <div class="phlabel" id="phaseLabel">PHASE : STANDBY</div>
+  </div>
+  <div class="errmsg" id="errMsg">// [AUDIO_ERROR] Stream blocked — running in manual mode</div>
+
+  <div class="ah">
+    <div style="display:flex;gap:3px;"><span style="width:6px;height:6px;background:#1e3a52;display:inline-block;"></span><span style="width:6px;height:6px;background:#1e3a52;display:inline-block;"></span><span style="width:6px;height:6px;background:#1e3a52;display:inline-block;"></span><span style="width:6px;height:6px;background:#1e3a52;display:inline-block;"></span></div>
+    <div class="at">ATLANTIDA_CITY_LOG</div>
+    <div class="ao">Observer : NOX_EX_MACHINA</div>
+  </div>
+
+  <div class="ag">
+    <div class="am">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+        <span style="color:#2e5a78;font-size:9px;">&#9658;</span>
+        <span style="color:#4a7a96;font-size:10px;letter-spacing:2px;">VIDEO RECORD_#0421-A</span>
+      </div>
+      <div class="vf">
+        <div class="rd"><div class="rdot"></div>REC</div>
+        <div style="position:absolute;top:6px;left:50%;transform:translateX(-50%);font-size:9px;color:#c8d8e8;letter-spacing:1px;z-index:2;text-shadow:0 1px 4px #0a0e14;white-space:nowrap;">ATLANTIDA — CENTRAL_BIO_DOME</div>
+        <img class="recimg" src="https://raw.githubusercontent.com/Spirit-Designer-Node/atlantida-archive/main/visual/VIDEO_RECORD_%230421-A.jpg" alt="">
+        <div class="imgov"></div>
+        <div class="noise" id="noiseLayer"></div>
+        <div class="nint" id="noxInt">
+          <div class="nintxt">// [ACCESS] Observation_Channel<br>:= TERMINATED<br><br>[DATA_LINK_SEVERED]</div>
+        </div>
+        <div class="sc"></div>
+        <div style="position:absolute;bottom:6px;left:8px;font-size:8px;z-index:2;color:#7ab8d4;text-shadow:0 1px 3px #0a0e14;" id="recTimestamp">--:--:--</div>
+      </div>
+      <div class="ob">
+        <div class="bt"><span>OBSERVATION_LOG</span><span style="color:#1e3a52">&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</span></div>
+        <div class="ln"><span class="kw">[TIME]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="vl" id="logTime">--:--:--</span></div>
+        <div class="ln"><span class="kw">[VISUAL]&nbsp;&nbsp;</span><span class="vl" id="visualLine">Subject_A adjusts Subject_B posture.</span></div>
+        <div class="ln"><span class="kw">[DETECT]&nbsp;&nbsp;</span><span class="vl">Heart_Rate_B := Elevated (<span id="bpmVal">102</span> bpm)</span></div>
+        <div class="ln"><span class="kw">[ANALYSIS]</span><span class="vl" id="analysisLine"> Affectional interaction detected.</span></div>
+        <div class="ln"><span class="kw">[QUERY]&nbsp;&nbsp;&nbsp;</span><span class="vh">Reciprocal affection probability := 81%</span></div>
+        <div class="ln" id="statusLine" style="opacity:0;transition:opacity 1s;"><span class="kw">[STATUS]&nbsp;&nbsp;</span><span class="vl">Non-critical emotional exchange.</span></div>
+        <div class="ln" id="audioLine" style="opacity:0;transition:opacity 1s;"><span class="kw">[AUDIO]&nbsp;&nbsp;&nbsp;</span><span style="color:#2e8a5e">Ambient_Sound_Capture := ENABLED</span></div>
+      </div>
+      <div class="sprocess" id="secretProcess">
+        <div class="bt"><span>SECRET_PROCESS</span></div>
+        <div class="ln"><span class="kw">[HIDDEN]&nbsp;&nbsp;</span><span class="vl">ETERNAL_CURSE_OF_10000_YEARS</span></div>
+        <div class="ln"><span class="kw">[TARGET]&nbsp;&nbsp;</span><span class="vl">SCHERZO</span></div>
+        <div class="ln"><span class="kw">[STATUS]&nbsp;&nbsp;</span><span class="vl">Background Execution...</span></div>
+      </div>
+    </div>
+
+    <div class="ar2">
+      <div class="pn">
+        <div class="bt"><span>BIO_SIGNAL_MONITOR</span></div>
+        <div class="ln" style="color:#4a7a96;font-size:9px;">Heart Rate</div>
+        <div class="bv" id="bpmDisplay">102 bpm</div>
+        <div class="bb"><div class="bf" id="bpmBar" style="width:68%;"></div></div>
+      </div>
+      <div class="pn">
+        <div class="bt"><span>EMOTION INDEX</span></div>
+        <div class="ln" style="color:#4a7a96;font-size:9px;margin-bottom:2px;">HAPPINESS</div>
+        <div class="hv" id="happinessVal">92%</div>
+        <div style="height:18px;overflow:hidden;margin:4px 0;">
+          <svg width="100%" height="18" viewBox="0 0 200 18" preserveAspectRatio="none">
+            <polyline points="0,9 10,4 20,13 30,6 40,11 50,3 60,14 70,7 80,12 90,5 100,10 110,4 120,13 130,7 140,11 150,5 160,14 170,8 180,12 190,6 200,9" fill="none" stroke="#2e8a5e" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wb" id="warnBox">
+        <div class="wh"><div class="wi">!</div><div class="wt">WARNING</div></div>
+        <div class="wl">Unauthorized_Packet_Detected</div>
+        <div class="wl">SOURCE: P.I.A.N.O. (Local_Admin_Override)</div>
+        <div class="wlr"><span id="termText"></span></div>
+        <div class="wlw">ACCESS_DENIED</div>
+        <div class="wlw">ADMIN_OVERRIDE.</div>
+      </div>
+      <div class="pn">
+        <div class="bt"><span>[ LOG ENTRY ]</span></div>
+        <div class="ln"><span class="kw">SUBJECT </span><span class="vl">P.I.A.N.O. / SCHERZO</span></div>
+        <div class="ln"><span class="kw">RESULT&nbsp;&nbsp;</span><span id="resultTxt" style="color:#2e5a78">Monitoring...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ft">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+      <div style="color:#2e5a78;font-size:9px;">PH_FIER THENACTING — SEFURS</div>
+      <div style="color:#2e5a78;font-size:9px;">Nox Ex Machina — AI Management System — Atlantida Database</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const AUDIO_URL='https://raw.githubusercontent.com/Spirit-Designer-Node/atlantida-archive/main/media/DAILY_MONITORING.mp3';
+const T_BMELO=37,T_PRIVATE=54,T_SABI=65,T_DAISABI=91,T_SECRET=130;
+let audio=null,audioOk=false;
+let playing=false,elapsed=0,rafId=null,lastT=null;
+let bpmBase=102,phase=0,typeIdx=0,warnActive=false,typeTimer=null;
+const typeStr="Observation_Channel := TERMINATED";
+
+function updateClock(){
+  let now=new Date();
+  let h=String(now.getHours()).padStart(2,'0');
+  let m=String(now.getMinutes()).padStart(2,'0');
+  let s=String(now.getSeconds()).padStart(2,'0');
+  let ts=h+':'+m+':'+s;
+  document.getElementById('logTime').textContent=ts;
+  document.getElementById('recTimestamp').textContent=ts;
+}
+updateClock();
+setInterval(updateClock,1000);
+
+function initAudio(){
+  try{
+    audio=new Audio();
+    audio.crossOrigin='anonymous';
+    audio.src=AUDIO_URL;
+    audio.preload='auto';
+    audio.addEventListener('canplaythrough',()=>{audioOk=true;},{once:true});
+    audio.addEventListener('error',()=>{
+      audioOk=false;
+      document.getElementById('errMsg').style.display='block';
+    },{once:true});
+    audio.load();
+  }catch(e){audioOk=false;}
+}
+initAudio();
+
+function togglePlay(){
+  if(playing){
+    playing=false;
+    if(audioOk&&audio)audio.pause();
+    cancelAnimationFrame(rafId);lastT=null;
+    document.getElementById('playBtn').textContent='[ PLAY ]';
+    document.getElementById('playBtn').classList.remove('playing');
+  }else{
+    playing=true;
+    document.getElementById('playBtn').textContent='[ PAUSE ]';
+    document.getElementById('playBtn').classList.add('playing');
+    if(audioOk&&audio){
+      audio.currentTime=elapsed;
+      audio.play().catch(()=>{audioOk=false;document.getElementById('errMsg').style.display='block';});
+    }
+    lastT=null;
+    rafId=requestAnimationFrame(tick);
+  }
+}
+
+function resetAll(){
+  playing=false;
+  if(audio){audio.pause();audio.currentTime=0;}
+  cancelAnimationFrame(rafId);
+  if(typeTimer)clearInterval(typeTimer);
+  elapsed=0;phase=0;typeIdx=0;warnActive=false;lastT=null;bpmBase=102;
+  document.getElementById('playBtn').textContent='[ PLAY ]';
+  document.getElementById('playBtn').classList.remove('playing');
+  document.getElementById('progBar').style.width='0%';
+  document.getElementById('timeLabel').textContent='0:00';
+  document.getElementById('phaseLabel').textContent='PHASE : STANDBY';
+  document.getElementById('bpmVal').textContent='102';
+  document.getElementById('bpmDisplay').textContent='102 bpm';
+  document.getElementById('bpmDisplay').style.color='#7ab8d4';
+  document.getElementById('bpmBar').style.width='68%';
+  document.getElementById('warnBox').classList.remove('active');
+  document.getElementById('termText').textContent='';
+  document.getElementById('noiseLayer').classList.remove('active');
+  document.getElementById('noxInt').classList.remove('active');
+  document.getElementById('resultTxt').textContent='Monitoring...';
+  document.getElementById('resultTxt').style.color='#2e5a78';
+  document.getElementById('statusLine').style.opacity='0';
+  document.getElementById('audioLine').style.opacity='0';
+  document.getElementById('secretProcess').classList.remove('active');
+  document.getElementById('visualLine').textContent='Subject_A adjusts Subject_B posture.';
+  document.getElementById('analysisLine').textContent=' Affectional interaction detected.';
+  document.getElementById('happinessVal').textContent='92%';
+  document.getElementById('happinessVal').style.color='#7ab8d4';
+}
+
+function tick(ts){
+  if(!playing)return;
+  if(!lastT)lastT=ts;
+  if(audioOk&&audio&&!audio.paused){elapsed=audio.currentTime;}
+  else{let dt=(ts-lastT)/1000;elapsed+=dt;}
+  lastT=ts;
+  let totalSec=audioOk&&audio&&audio.duration?audio.duration:151;
+  elapsed=Math.min(elapsed,totalSec);
+  updateState(elapsed,totalSec);
+  if(elapsed<totalSec)rafId=requestAnimationFrame(tick);
+  else{
+    playing=false;
+    document.getElementById('playBtn').textContent='[ PLAY ]';
+    document.getElementById('playBtn').classList.remove('playing');
+    document.getElementById('phaseLabel').textContent='PHASE : LOG_CLOSED';
+  }
+}
+
+function updateState(t,totalSec){
+  let pct=t/(totalSec||151)*100;
+  document.getElementById('progBar').style.width=pct+'%';
+  let m=Math.floor(t/60),s=Math.floor(t%60);
+  document.getElementById('timeLabel').textContent=m+':'+(s<10?'0':'')+s;
+  let bpm=Math.round(bpmBase+Math.sin(t*1.2)*3+Math.sin(t*0.7)*2);
+  if(t>=T_BMELO&&t<T_PRIVATE)bpm=Math.round(106+Math.sin(t*2)*3);
+  if(t>=T_PRIVATE&&t<T_SABI)bpm=Math.round(110+Math.sin(t*3)*5);
+  if(t>=T_SABI&&t<T_DAISABI)bpm=Math.round(96+Math.sin(t*0.8)*2);
+  document.getElementById('bpmVal').textContent=bpm;
+  document.getElementById('bpmDisplay').textContent=bpm+' bpm';
+  let bp=Math.min(Math.round(40+((bpm-80)/60)*50),95);
+  document.getElementById('bpmBar').style.width=bp+'%';
+  document.getElementById('bpmDisplay').style.color=bpm>108?'#e8a030':bpm>104?'#d4830a':'#7ab8d4';
+  if(t>=2&&phase<1){phase=1;document.getElementById('phaseLabel').textContent='PHASE : OBSERVATION';setTimeout(()=>{document.getElementById('statusLine').style.opacity='1';},1500);}
+  if(t>=T_BMELO&&phase<2){phase=2;document.getElementById('phaseLabel').textContent='PHASE : PULSE_ELEVATED';document.getElementById('analysisLine').textContent=' Emotional_Anomaly := RISING';}
+  if(t>=T_PRIVATE&&phase<3){phase=3;document.getElementById('phaseLabel').textContent='PHASE : INTRUSION_DETECTED';triggerWarning();}
+  if(t>=T_SABI&&phase<4){
+    phase=4;document.getElementById('phaseLabel').textContent='PHASE : CHANNEL_TERMINATED';
+    document.getElementById('noiseLayer').classList.add('active');
+    setTimeout(()=>{document.getElementById('noxInt').classList.add('active');document.getElementById('resultTxt').textContent='Observation Stream Lost.';document.getElementById('resultTxt').style.color='#e85030';document.getElementById('visualLine').textContent='[SIGNAL_LOST]';},800);
+    setTimeout(()=>{document.getElementById('noiseLayer').classList.remove('active');},2000);
+  }
+  if(t>=T_DAISABI&&phase<5){
+    phase=5;document.getElementById('phaseLabel').textContent='PHASE : AUDIO_EXTRACTION';
+    document.getElementById('noxInt').classList.remove('active');bpmBase=98;
+    document.getElementById('audioLine').style.opacity='1';
+    document.getElementById('happinessVal').textContent='92%';
+    document.getElementById('happinessVal').style.color='#2e8a5e';
+    document.getElementById('analysisLine').textContent=' [CAUSE] UNKNOWN';
+  }
+  if(t>=T_SECRET&&phase<6){phase=6;document.getElementById('phaseLabel').textContent='PHASE : BACKGROUND_PROCESS';document.getElementById('secretProcess').classList.add('active');}
+}
+
+function triggerWarning(){
+  if(warnActive)return;
+  warnActive=true;
+  document.getElementById('warnBox').classList.add('active');
+  typeIdx=0;document.getElementById('termText').textContent='';
+  typeTimer=setInterval(()=>{
+    if(typeIdx<=typeStr.length){document.getElementById('termText').textContent=typeStr.slice(0,typeIdx);typeIdx++;}
+    else clearInterval(typeTimer);
+  },40);
+}
+</script>
+</body>
+</html>
