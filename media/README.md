@@ -32,6 +32,7 @@ RESTORED / AUTHORIZED
   FORTE_TERMINATION.mp3     : Internal conflict / Failsafe trigger signal
   FOUNDATION_FESTIVAL.mp3   : Civic synchronization / Seven Scientists era
   DAILY_MONITORING.mp3      : Routine fragment / Happiness_Index := 92.1% / Cause unknown
+  ELUCHE_SONG.mp3           : Memory fragment / Singer: Pavane / Origin: unresolved
   ETERNAL_CURSE.mp3         : Inheritance of trust / 10,000-year stasis protocol
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
