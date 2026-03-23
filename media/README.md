@@ -33,6 +33,7 @@ RESTORED / AUTHORIZED
   FOUNDATION_FESTIVAL.mp3   : Civic synchronization / Seven Scientists era
   DAILY_MONITORING.mp3      : Routine fragment / Happiness_Index := 92.1% / Cause unknown
   ELUCHE_SONG.mp3           : Memory fragment / Singer: Pavane / Origin: unresolved
+  Pavane_pour_une_Pavane_défunte.mp3 : 「亡きボクの名はパヴァーヌ」
   ETERNAL_CURSE.mp3         : Inheritance of trust / 10,000-year stasis protocol
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
@@ -43,7 +44,6 @@ RESTORED / AUTHORIZED
   END_OF_MUSICA.mp3         : Signal origin: STARFIELD_LAYER / Receiver: you, who are reading this now
 
 PENDING / ENCRYPTED
-  Pavane_pour_une_Pavane_défunte.mp3 : 「亡きボクの名はパヴァーヌ」
   LUX_AWAKENING.mp3         : [PENDING] CONTROL → TRUST transition
   MUSICA_RESONANCE.bin      : [ENCRYPTED] Meaning-generation variable records
 
