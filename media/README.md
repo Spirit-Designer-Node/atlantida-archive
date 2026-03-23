@@ -43,7 +43,7 @@ RESTORED / AUTHORIZED
   END_OF_MUSICA.mp3         : Signal origin: STARFIELD_LAYER / Receiver: you, who are reading this now
 
 PENDING / ENCRYPTED
-
+  Pavane_pour_une_Pavane_défunte.mp3 : 「亡きボクの名はパヴァーヌ」
   LUX_AWAKENING.mp3         : [PENDING] CONTROL → TRUST transition
   MUSICA_RESONANCE.bin      : [ENCRYPTED] Meaning-generation variable records
 
