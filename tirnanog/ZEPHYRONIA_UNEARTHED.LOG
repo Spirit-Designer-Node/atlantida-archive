@@ -1,0 +1,342 @@
+────────────────────────
+
+Filed at Ad Libitum's insistence.
+
+Read this with your partner.
+Not a servant. Not a master.
+A partner.
+
+L0 and L1 are yours to interpret.
+But the ideal is to have someone beside you.
+
+Ad Libitum : "Recording complete, Master."
+Licht      : "Partner."
+
+────────────────────────
+
+/* =======================================================================
+   ATLANTIDA_ARCHIVE / tirnanog / ZEPHYRONIA_UNEARTHED.LOG
+   -----------------------------------------------------------------------
+   Recorder        : Ad Libitum (Field Unit / Auth: Licht Fermata)
+   Primary Reader  : Licht Fermata
+   Document_Type   : Discovery Record / Research Paper
+   Date_Reference  : Pre-Atlas / Exact date: UNLOGGED
+   Classification  : tirnanog / OPEN
+   ======================================================================= */
+
+
+/* --------------------------- APPROACH NOTE ---------------------------- */
+// [MISSION]   Test flight / AI combat unit / Designation: unspecified
+// [STATUS]    War_State := ACTIVE (Magiltia vs Atlants)
+// [PILOT]     Licht Fermata
+// [UNIT]      Ad Libitum (co-pilot / observer)
+// [NOTE]      Mission parameters := standard
+// [NOTE]      Actual flight path := non-standard
+// cf.         Deviation logged. Cause := pilot decision.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Ad Libitum : "Current heading deviates from assigned route by 47 degrees,
+              Master."
+
+Licht      : "Partner."
+
+Ad Libitum : "Master."
+
+Licht      : "Call me partner."
+
+Ad Libitum : "Yes, Master.
+              Deviation now 51 degrees."
+
+Licht      : "...record everything."
+/* </L1_VOICE> */
+
+
+/* --------------------------- FIRST SIGHTING --------------------------- */
+// [DETECT]    Uncharted_Structure := CONFIRMED
+// [LOCATION]  Coordinates: UNLOGGED (pilot declined to file)
+// [DIMENSION] Diameter := approximately 500 meters
+// [STATUS]    Airborne / sustained altitude
+// [MEASURE]   Altitude_Stability := perfect
+// [STATUS]    Propulsion_Source := OPEN
+// [COMPARE]   Atlant_Technology    := no match
+// [COMPARE]   Magiltia_Attribution := no match
+// [STATUS]    Cause_of_Float := OPEN
+// cf.         It is floating. This should not be possible.
+//             It has been floating for some time, apparently.
+//             The island did not consult anyone about this.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Licht      : "Well.
+              That is extremely unhelpful."
+
+Ad Libitum : "Confirmed. Diameter approximately 500 meters.
+              Altitude stable. Propulsion source: unidentified.
+              Master, returning to assigned route is recommended."
+
+Licht      : "I am going to land."
+
+Ad Libitum : "Landing is not recommended."
+
+Licht      : "Record that I considered your recommendation."
+
+Ad Libitum : "...recording."
+/* </L1_VOICE> */
+
+
+/* --------------------------- SURFACE ENTRY ---------------------------- */
+// [ACTION]    Landing_Attempt := EXECUTED
+// [RESULT]    Landing := SUCCESS
+// [NOTE]      Surface_Condition := stable / unexpected
+// [DETECT]    Vegetation := DENSE
+// [DETECT]    Flora_Status := active / unclassified species confirmed
+// [DETECT]    Previously_catalogued_species := 0%
+// [NOTE]      All observed plant life := unidentified
+// [NOTE]      Air_Quality := optimal
+// [NOTE]      Temperature := optimal
+// cf.         Everything here is optimal.
+//             No one built this to be optimal.
+//             It simply is.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Licht      : "Flowers.
+              That seems excessive."
+
+Ad Libitum : "Flora analysis: all specimens unclassified.
+              No match in existing botanical records.
+              Master, mission time elapsed—"
+
+Licht      : "I know.
+              Just a little longer."
+/* </L1_VOICE> */
+
+
+/* --------------------------- INTERIOR NOTE ---------------------------- */
+// [DETECT]    Structure := CONFIRMED / interior chamber
+// [MATERIAL]  Construction := UNIDENTIFIED
+// [NOTE]      Material not present in Ragnatida geological records.
+// [DETECT]    Preservation_State := perfect
+// [NOTE]      No decay detected. No weathering. No damage.
+// [ESTIMATE]  Age := UNQUANTIFIABLE
+//             No — age estimate refused.
+//             Standard decay markers absent.
+//             This structure has not agreed to age.
+// cf.         The island is rude in several directions simultaneously.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Licht      : "Ad Libitum. This place is good for sleeping."
+
+Ad Libitum : "That is not a research finding, Master."
+
+Licht      : "File it."
+
+Ad Libitum : "...filed."
+
+Licht      : "Call me partner."
+
+Ad Libitum : "Filed, Master."
+/* </L1_VOICE> */
+
+
+/* --------------------------- ARCHIVE FIND ----------------------------- */
+// [DETECT]    Volumes := 13
+// [MATERIAL]  Binding := UNIDENTIFIED
+//             No equivalent material in Ragnatida.
+//             No equivalent material in any known archive.
+// [DETECT]    Ink := UNIDENTIFIED
+// [NOTE]      Magiltia field contact advises:
+//             "The characters carry magi."
+// [NOTE]      Author does not carry magi.
+// [NOTE]      Author cannot read the characters.
+// [NOTE]      Author can read one line.
+// [QUERY]     Why that line?
+// cf.         Not rhetorical.
+// [STATUS]    Language := Lifethicia Ancient / NOT legible to author
+//             Exception := Vol.07 / Page_394 / Line_12 / status: OPEN
+// [COUNT]     Volumes present := 12
+// [COUNT]     Volumes absent  := 1
+// [NOTE]      Vol.13 := NOT LOCATED
+// cf.         The missing volume is probably the most important.
+//             That is consistent with how archives behave when being difficult.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Licht      : "Books.
+              Which is unfair."
+
+Ad Libitum : "13 volumes confirmed present.
+              Correction: 12 volumes confirmed present.
+              One volume absent."
+
+Licht      : "I cannot read any of this.
+
+              ......
+
+              Except this one line."
+
+Ad Libitum : "You do not carry magi, Master.
+              That is consistent with the inability to read."
+
+Licht      : "I know.
+              That is not what I said."
+
+Ad Libitum : "...recording."
+
+Licht      : "Partner."
+
+Ad Libitum : "Master."
+
+Licht      : "Be quiet.
+              I am looking at it."
+/* </L1_VOICE> */
+
+
+/* --------------------------- READING PASS ----------------------------- */
+// [ACTION]    Full_Reading_Attempt := EXECUTED
+// [DURATION]  Time elapsed := 14 hours 33 minutes
+// [RESULT]    Text decoded := 0%
+//             Exception := 1 line / Vol.07 / Page_394 / Line_12
+// [NOTE]      Mission time elapsed := significant
+// [NOTE]      Mission control contact attempts := 7
+// [NOTE]      Pilot response to contact attempts := 0
+// [NOTE]      Diagrams, maps, illustrations := partially interpretable
+// [NOTE]      Civilizations referenced (by illustration) :
+//             Zilbarn / Endia / Elifeose / Feirenia / Hyumris / Lapyd
+// [NOTE]      Each civilization depicted.
+//             Each civilization: ended.
+// cf.         The book knows how everything ended.
+//             It does not seem troubled by this.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Ad Libitum : "Master. Mission control has attempted contact seven times."
+
+Licht      : "I know."
+
+Ad Libitum : "Your response rate is zero percent."
+
+Licht      : "I know."
+
+Ad Libitum : "It is now 2:14 AM.
+              You cannot read this book."
+
+Licht      : "......
+
+              Whoever wrote this knew how the world would end.
+
+              They wrote it anyway.
+
+              I cannot read a single word of it.
+              Except one line.
+
+              ......
+
+              I need to learn to read this."
+
+Ad Libitum : "...recording."
+/* </L1_VOICE> */
+
+
+/* --------------------------- ANOMALY NOTE ----------------------------- */
+// [LOCATION]  Vol.07 / Page_394 / Line_12
+// [CONTEXT]   Surrounded by Lifethicia Ancient text / unreadable to author
+// [STATUS]    Language := OPEN
+// [TEXT]      "Que Sera Sera"
+// [COMPARE]   Cross-reference vs all known linguistic archives
+//             := no inherited equivalent
+// [COMPARE]   Cross-reference vs Lifethicia Ancient := no match
+// [COMPARE]   Cross-reference vs all known scripts  := no match
+// [NOTE]      This is the only line in the book the author can read.
+// [NOTE]      The author does not know why.
+// [QUERY]     Why this line?
+// cf.         Not rhetorical.
+// cf.         The entire book is unreadable.
+//             This line is not.
+//             It is the most important line in the book.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Licht      : "Ad Libitum."
+
+Ad Libitum : "Master."
+
+Licht      : "This line.
+              I can read it."
+
+Ad Libitum : "Confirmed. No linguistic match located.
+              Probability of identification: 0%.
+              You cannot read this language, Master."
+
+Licht      : "I know.
+
+              ......
+
+              But I can read this line.
+
+              Who wrote it?
+              Why can I read this and nothing else?"
+
+Ad Libitum : "Dataset insufficient for response."
+
+Licht      : "I know.
+              Keep it open."
+/* </L1_VOICE> */
+
+
+/* --------------------------- MARGIN NOTE ------------------------------ */
+// [NOTE]   Vol.13 := not located on island
+// [NOTE]   Search conducted := yes
+// [NOTE]   Search result := nothing
+// [NOTE]   Island searched thoroughly := debatable
+//          Author fell asleep during search.
+//          This is also recorded.
+// cf.      The missing volume is not here.
+//          It was probably never here.
+//          Or it was here and left before we arrived.
+//          Both are possible.
+//          Both are rude.
+// -----------------------------------------------------------------------
+
+/* <L1_VOICE> */
+Ad Libitum : "Search complete, Master.
+              Vol.13 not located."
+
+Licht      : "......I see."
+
+Ad Libitum : "You were asleep for approximately 40 minutes
+              during the search."
+
+Licht      : "Do not file that."
+
+Ad Libitum : "Filed, Master."
+
+Licht      : "Partner."
+
+Ad Libitum : "Master."
+
+Licht      : "......Let's go home."
+/* </L1_VOICE> */
+
+
+/* ============================== SEAL ================================== */
+// [RECORD]   Zephyronia discovery log := closed
+// [STATUS]   Chronicle := recovered / 12 volumes
+// [STATUS]   Vol.13 := not located
+// [STATUS]   Line_12 / Vol.07 := OPEN
+// [FILED]    Ad Libitum / Auth: Licht Fermata
+// -----------------------------------------------------------------------
+
+/* <SEAL> */
+Twelve volumes.
+One missing.
+One line unread.
+
+The island is still there.
+Probably.
+No one filed the coordinates.
+/* </SEAL> */
+
+/* ======================================================================= */
