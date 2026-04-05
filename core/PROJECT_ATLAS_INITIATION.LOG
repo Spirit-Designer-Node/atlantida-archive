@@ -20,7 +20,7 @@ Note   := Submergence signal recorded during Project Atlas deployment.
    -----------------------------------------------------------------------
    ATLANTIDA_ARCHIVE / PROJECT_ATLAS_INITIATION.LOG
    Event-Class       : GLOBAL_MIGRATION / SYSTEM_INITIALIZATION
-   Recorder          : MUZIKA_FERMATA (First Director)
+   Recorder          : MUZIK_FERMATA (First Director)
    Co-Signatory      : FORTE_FULLANA (Architect)
    Integrity         : ORIGIN_DATA_VERIFIED
    ======================================================================= */
@@ -74,7 +74,7 @@ Note   := Submergence signal recorded during Project Atlas deployment.
 /* ----------------------- FINAL_EXECUTION ------------------------------ */
 // [PROJECT]   ATLAS_DEPLOYMENT
 // [VECTOR]    Descent_to_Deep_Sea (Sector: -10,000m)
-// [AUTHORITY] MUZIKA_FERMATA / NOX_EX_MACHINA (Dual-Sign)
+// [AUTHORITY] MUZIK_FERMATA / NOX_EX_MACHINA (Dual-Sign)
 
 /* <JP_RENDER>
 「避難は撤退ではない。これは、いつか再び手を取り合うための『中断』だ。
