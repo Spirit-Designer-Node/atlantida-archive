@@ -33,6 +33,7 @@ RESTORED / AUTHORIZED
   FOUNDATION_FESTIVAL.mp3   : Civic synchronization / Seven Scientists era
   DAILY_MONITORING.mp3      : Routine fragment / Happiness_Index := 92.1% / Cause unknown
   ELUCHE_SONG.mp3           : Memory fragment / Singer: Pavane / Origin: unresolved
+  ELUCHE_SONG_FORUNA.mp3    : Memory fragment / Singer : FORUNA / Origin : unresolved
   Pavane_pour_une_Pavane_défunte.mp3 : 「亡きボクの名はパヴァーヌ」
   ETERNAL_CURSE.mp3         : Inheritance of trust / 10,000-year stasis protocol
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
