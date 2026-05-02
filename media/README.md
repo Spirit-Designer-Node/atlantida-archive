@@ -39,6 +39,7 @@ RESTORED / AUTHORIZED
   QUIET_END_RECORD.mp3      : 10,000-year rhapsody / Recorded by P.I.A.N.O.
   EXODIUM_SIGNAL.mp3        : Surface pulse relay / Observer: Yord
   BABEL_INCIDENT.mp3        : Historical trauma record / Pavane context
+  NOX_EMOTIONAL_BURST.mp3   : Logic collapse record / Nox ex machina / The question that broke the city
   ARK_DEPLOYMENT.mp3        : Emergency override / ARK activation / Executor: Lux ex Umbra
   PIANO_PRIVATE_PARTITION.mp3 : P.I.A.N.O. private record / retain = true
   OPEN_PRIVATE.mp3          : Opened for Nox / What cannot be classified, can still be kept
